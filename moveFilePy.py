@@ -13,7 +13,7 @@ def parseFile(f, targetDirectory):
             os.makedirs(directory)
         targetFile = directory + '/' + fileExt[1];
         print(targetFile)
-        # shutil.move(f, targetFile)
+        shutil.move(f, targetFile)
 
 def parseDirectory(directory, targetDirectory = './'):
     if not os.path.exists(targetDirectory) :
